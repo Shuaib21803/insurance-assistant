@@ -123,7 +123,7 @@ with st.sidebar:
         with col1:
             # Chat selection button
             if st.button(
-                f"{chat_data['name'][:15]}", 
+                f"{chat_data['name'][:15]}...", 
                 key=f"select_{chat_id}",
                 use_container_width=True,
                 type="primary" if chat_id == st.session_state.current_chat_id else "secondary"
