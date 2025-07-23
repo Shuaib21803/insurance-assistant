@@ -17,9 +17,6 @@ __pycache__/
 # macOS metadata
 .DS_Store
 
-# Streamlit logs and history
-.streamlit/
-
 # Logs
 *.log
 
