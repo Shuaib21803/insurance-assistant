@@ -118,12 +118,12 @@ with st.sidebar:
     )
     
     for chat_id, chat_data in sorted_chats:
-        col1, col2 = st.columns([3, 1])
+        col1, col2 = st.columns([4, 1])
         
         with col1:
             # Chat selection button
             if st.button(
-                f"{chat_data['name']}", 
+                f"{chat_data['name'][:15]}", 
                 key=f"select_{chat_id}",
                 use_container_width=True,
                 type="primary" if chat_id == st.session_state.current_chat_id else "secondary"
@@ -142,12 +142,12 @@ with st.sidebar:
                     st.rerun()
                 else:
                     st.warning("🚫")
-        st.markdown("""
-        <hr style='margin-top:2rem;margin-bottom:1rem;'>
-        <div style='text-align: center; font-size: 0.9rem; color: gray;'>
-            Developed by <a href="https://github.com/Shuaib21803" target="_blank"><strong>Shuaib</strong></a>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <hr style='margin-top:2rem;margin-bottom:1rem;'>
+    <div style='text-align: center; font-size: 0.9rem; color: gray;'>
+        Developed by <a href="https://github.com/Shuaib21803" target="_blank"><strong>Shuaib</strong></a>
+    </div>
+    """, unsafe_allow_html=True)
 
 
 # Main chat area
