@@ -146,6 +146,13 @@ with st.sidebar:
                     st.rerun()
                 else:
                     st.warning("🚫")
+        st.markdown("""
+        <hr style='margin-top:2rem;margin-bottom:1rem;'>
+        <div style='text-align: center; font-size: 0.9rem; color: gray;'>
+            Developed by <a href="https://github.com/Shuaib21803" target="_blank"><strong>Shuaib</strong></a>
+        </div>
+        """, unsafe_allow_html=True)
+
 
 # Main chat area
 current_chat = st.session_state.chats[st.session_state.current_chat_id]
