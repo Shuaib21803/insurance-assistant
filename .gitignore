@@ -1,1 +1,27 @@
+# Ignore environment variable files
 .env
+.env.*
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# VSCode settings (optional)
+.vscode/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# macOS metadata
+.DS_Store
+
+# Streamlit logs and history
+.streamlit/
+
+# Logs
+*.log
+
+# Node modules (if using JS components)
+node_modules/
