@@ -5,8 +5,8 @@ import time
 from datetime import datetime
 
 # ============ CONFIG =============
-openai.api_key = st.secrets("OPENAI_API_KEY")
-ASSISTANT_ID = st.secrets("ASSISTANT_ID")  # Replace with your actual Assistant ID
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+ASSISTANT_ID = st.secrets["ASSISTANT_ID"]
 # ==================================
 
 # Initialize session state for chat management
