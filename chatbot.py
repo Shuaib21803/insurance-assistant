@@ -2,15 +2,11 @@ import streamlit as st
 from streamlit_chat import message
 import openai
 import time
-import os
-from dotenv import load_dotenv
-import json
 from datetime import datetime
 
 # ============ CONFIG =============
-load_dotenv(".env")
-openai.api_key = os.getenv("OPENAI_API_KEY")
-ASSISTANT_ID = os.getenv("ASSISTANT_ID")  # Replace with your actual Assistant ID
+openai.api_key = st.secrets("OPENAI_API_KEY")
+ASSISTANT_ID = st.secrets("ASSISTANT_ID")  # Replace with your actual Assistant ID
 # ==================================
 
 # Initialize session state for chat management
